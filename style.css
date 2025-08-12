@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fcf5eb;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation Bar Start Here */
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.whImage img:nth-child(1){
+    width: 130px;
+}
+
+.navListing{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navListing > p{
+    cursor: pointer;
+    position: relative;
+}
+
+.navListing > p::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+    bottom: 0px;
+    transition: all 0.4s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.navListing > p:hover::before{
+    transform: scaleX(1);
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.features p:nth-child(1){
+    position: relative;
+}
+
+.features p:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+    bottom: 0px;
+    transition: all 0.4s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.features p:nth-child(1):hover::before{
+    transform: scaleX(1);
+}
+
+.features img:nth-child(2){
+    transform: rotate(-90deg);
+    width: 8px;
+    height: 13px;
+}
+
+.downloadBtn{
+    display: flex;
+    gap: 20px;
+    border: none;
+    border: 1px solid #1c1e21;
+    background-color: #25d366;
+    /* color: #1c1e21; */
+    padding: 12px 20px;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.downloadBtn p:nth-child(1){
+    color: black;
+}
+
+/* Navigation Bar End Here */
+
+/* MaaBeti Section Start Here */
+
+.maabeti{
+    background-image: url(images/MaaBeti.png);
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100%;
+    margin: 32px 32px 10px 32px;
+    background-position: top;
+    position: relative;
+    padding: 0px 100px;
+}
+
+.leftSide{
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.maabetiDescription{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.maabetiDescription > h2{
+    font-size: 75px;
+    font-weight: normal;
+    color: white;
+    letter-spacing: -5px;
+    line-height: 85px;
+}
+
+.maabetiDescription > p{
+    font-size: 16px;
+    color: white;/
+}
+
+.btn{
+    width: 160px;
+}
+
+.rightSide{
+    padding: 80px 0px;
+}
+
+.rightSide > img{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    /* position: absolute; */
+}
+
+.rightSide img:nth-child(1){
+    animation: img1 0.5s;
+}
+
+@keyframes img1 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.rightSide img:nth-child(2){
+    position: absolute;
+    top: 98px;
+    animation: img2 0.8s;
+}
+
+@keyframes img2 {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.rightSide img:nth-child(3){
+    animation: img3 1.4s;
+}
+
+@keyframes img3 {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.rightSide img:nth-child(4){
+    padding-top: 20px;
+    animation: img4 2.2s;
+}
+
+@keyframes img4 {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.rightSide img:nth-child(5){
+    animation: img5 2.8s;
+}
+
+@keyframes img5 {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.rightSide img:nth-child(6){
+    position: absolute;
+    bottom: 115px;
+    animation: img6 3.4s;
+}
+
+@keyframes img6 {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.rightSide img:nth-child(7){
+    animation: img7 4s;
+}
+
+@keyframes img7 {
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* MaaBeti Section End Here */
+
+/* Instruction Section Start Here */
+
+.instruction{
+    font-size: 12px;
+    color: #5e5e5e;
+    text-align: right;
+    padding-right: 30px;
+}
+
+/* Instruction Section End Here */
+
+/* Multiple Profile Section Start Here */
+
+.multiplePic{
+    padding: 64px 32px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 50px;
+}
+
+.multiplePic > p{
+    font-size: 45px;
+    font-weight: normal;
+    padding: 0px 180px;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 50px;
+}
+
+.sectionImg{
+    width: 100%;
+}
+
+/* Cart Section Start here */
+
+.cart-odd{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.cartDetail{
+    width: 435px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+
+.cartDescription h2:nth-child(1){
+    font-size: 58px;
+    font-weight: normal;
+    letter-spacing: -4px;
+    line-height: 65px;
+    margin-bottom: 10px;
+}
+
+.cartDescription p:nth-child(2){
+    font-size: 18px;
+}
+
+.CartBtn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.CartBtn p:nth-child(1){
+    position: relative;
+}
+
+.CartBtn p:nth-child(1)::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+    bottom: 0;
+    /* border: 1px solid fuchsia; */
+}
+
+.CartBtn img:nth-child(2){
+    width: 8px;
+    height: 13px;
+    transform: rotate(180deg);
+}
+
+.cartImg-odd{
+    max-width: 400px;
+}
+
+/* Even Cart Design */
+
+.cartImg-even{
+    max-width: 400px;
+}
+
+.cart-even{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 70px 0px 70px 50px;
+}
+
+/* Special Cart Design */
+
+.special{
+    background-color: #111b21;
+    color: white;
+}
+
+.specialSpan{
+    color: #25d366;
+}
+
+.specialImg {
+    color: white;
+}
+
+/* Footer Section Start From Here */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    /* gap: 100px; */
+    background-color: #111b21;
+    color: white;
+    padding: 0.5vw 10vw;
+}
+
+.layer1{
+    display: none;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    /* display: none; */
+}
+
+.border{
+    display: none;
+}
+
+.icons i {
+    font-size: 20px;
+    background-color: #1c1e21;
+    /* margin-top: 8px; */
+    padding: 12px 13px;
+    cursor: pointer;
+    /* transition: 0.3s all; */
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+.icons i:hover {
+    background-color:  #25d366;
+    color: #fff;
+}
+
+#facebook-icon {
+    padding: 12px 16px;
+}
+
+.layer2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    padding: 80px 20px;
+}
+
+.layer2FirstRow{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 110px;
+}
+
+.footer-row{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.layer2 li{
+    font-size: 18px;
+    list-style: none;
+    letter-spacing: 0px;
+}
+
+.layer2 .span{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.layer3{
+    display: none;
+}
+
+.layer4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #33463f;
+    padding: 40px 20px;
+}
+
+.part1{
+    display: flex;
+    justify-content: space-between;
+    /* text-align: center; */
+    gap: 50px;
+}
+
+/* .layer4 ul{
+    display: flex;
+
+} */
+
+.layer4 li{
+    font-size: 12px;
+    list-style: none;
+}
+
+.copywrite{
+    font-size: 12px;
+}
+
+.privacy{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width : 1360px){
+    .navListing{
+        display: none;
+    }
+    .gaayab{
+        display: none;
+    }
+    .gaayab-circle{
+        padding: 7px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width : 1024px){
+    .maabeti{
+        flex-wrap: wrap-reverse;
+    }
+
+    .rightSide img:nth-child(4) ,
+    .rightSide img:nth-child(5) ,
+    .rightSide img:nth-child(6) ,
+    .rightSide img:nth-child(7) {
+        display: none;
+    }
+
+    .rightSide img:nth-child(2)
+    {
+        top: 65px;
+    }
+
+    .rightSide {
+        padding: 50px 0px;
+    }
+
+    .leftSide {
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .cart-odd{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .cart-even{
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .multiplePic > p{
+        font-size: 40px;
+        padding: 60px;
+    }
+
+    .footer{
+        padding: 0.5vw 6vw;
+    }
+
+    .cartDetail{
+        width: 680px;
+    }
+
+    .cartImg-even{
+        margin-right: 140px;
+    }    
+
+    .iconsgaayab{
+        display: none;
+    }
+
+    .layer3{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 40px 20px;
+        /* display: contents; */
+    }
+
+    .layer2FirstRow{
+        display: none;
+    }
+}
+
+
+@media (max-width : 425px){
+    .layer3{
+        display: none;
+    }
+
+    .part1 ,
+    .privacy {
+        flex-direction: column-reverse;
+        gap: 5px;
+        align-items: start;
+    }
+
+    .rightSide img:nth-child(1) ,
+    .rightSide img:nth-child(2) ,
+    .rightSide img:nth-child(3){
+        display: none;
+    }
+
+    .maabeti {
+        padding: 80px 20px;
+    }
+
+    .multiplePic > p {
+        font-size: 30px;
+        padding: 0px 20px;
+    }
+
+    .cartDescription h2:nth-child(1) {
+        font-size: 40px;
+        font-weight: normal;
+        letter-spacing: -4px;
+        line-height: 65px;
+        margin-bottom: 10px;
+    }
+
+    .cart-even {
+        padding: 70px 0px 70px 0px;
+    }
+
+    .cartDetail {
+        width: 350px;
+    }
+
+    .cartDescription h2:nth-child(1) {
+        font-size: 40px;
+        font-weight: normal;
+        letter-spacing: -1px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+
+    .cartImg-even > img{
+        max-width: 400px;
+    }
+
+    .cartImg-even {
+        margin-right: 0px;
+    }
+
+    .footer-row {
+        width: 135px;
+    }
+
+    .doUpper{
+        margin-top: 80px;
+    }
+
+    .layer1{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #33463f;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .border{
+        display: flex;
+        
+        border-bottom: 1px solid #33463f;
+        text-align: center;
+        padding: 40px;
+    }
+}
